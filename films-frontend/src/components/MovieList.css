@@ -1,0 +1,20 @@
+.movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .movie-item {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+    inline-size: 300px;
+    text-align: center;
+  }
+  
+  .movie-image {
+    max-inline-size: 100%;
+    block-size: auto;
+    border-radius: 8px;
+  }
+  

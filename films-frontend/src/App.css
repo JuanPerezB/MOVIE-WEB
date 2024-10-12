@@ -1,0 +1,129 @@
+/* src/App.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Contenedor principal con gradiente */
+body {
+  background: linear-gradient(to bottom right, #001f3f, #003366, #666666); /* Gradiente más oscuro */
+  min-block-size: 100vh;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Contenedor del título */
+.sidebar {
+  position: fixed;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  inline-size: 250px; /* Ajusta el ancho según tu preferencia */
+  block-size: 100vh;
+  background: rgba(255, 255, 255, 0.8); /* Fondo blanco transparente */
+  border-inline-end: 2px solid #003366; /* Borde azul oscuro */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Asegura que esté sobre otros elementos */
+}
+
+/* Estilo del título */
+.sidebar h1 {
+  font-family: 'Bebas Neue', sans-serif; /* Fuente urbana */
+  font-size: 3rem; /* Tamaño grande del texto */
+  color: #003366; /* Color azul oscuro */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra para darle profundidad */
+  margin: 0;
+  text-align: center;
+}
+
+/* Contenedor de comentarios */
+.sidebar-right {
+  position: fixed;
+  inset-block-start: 0;
+  inset-inline-end: 0;
+  inline-size: 250px; /* Ajusta el ancho según tu preferencia */
+  block-size: 100vh;
+  background: rgba(255, 255, 255, 0.8); /* Fondo blanco transparente */
+  border-inline-start: 2px solid #003366; /* Borde azul oscuro */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Asegura que esté sobre otros elementos */
+  overflow-y: auto; /* Permite scroll si hay muchos comentarios */
+}
+
+/* Estilo de los comentarios */
+.sidebar-right h2 {
+  font-family: 'Bebas Neue', sans-serif; /* Fuente urbana */
+  font-size: 2rem; /* Tamaño del texto para el título de comentarios */
+  color: #003366; /* Color azul oscuro */
+  margin-block-end: 20px;
+}
+
+.comment {
+  background: rgba(255, 255, 255, 0.9); /* Fondo ligeramente opaco */
+  border: 1px solid #ddd;
+  border-radius: 10px; /* Esquinas redondeadas */
+  padding: 10px;
+  margin-block-end: 10px;
+  inline-size: 100%; /* Asegura que los comentarios ocupen todo el ancho del contenedor */
+}
+
+/* Contenedor principal de la aplicación */
+.main-content {
+  margin-inline-start: 250px; /* Espacio para la columna de título */
+  margin-inline-end: 250px; /* Espacio para la columna de comentarios */
+  padding: 20px;
+}
+
+/* Ajustar tamaño de los títulos */
+h2 {
+  font-size: 2.5rem; /* Aumenta el tamaño del texto */
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff; /* Color blanco para contraste */
+  margin-block-end: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo transparente oscuro */
+  padding: 10px;
+  border-radius: 10px; /* Esquinas redondeadas para el fondo del título */
+}
+
+/* Estilo de los contenedores de películas */
+.card {
+  border: 2px solid #003366; /* Borde más grueso y color azul oscuro */
+  border-radius: 10px; /* Esquinas redondeadas */
+  background: rgba(255, 255, 255, 0.8); /* Fondo blanco transparente */
+}
+
+/* Estilo para el navbar */
+.navbar {
+  background-color: #001f3f; /* Fondo más oscuro para el navbar */
+}
+
+.navbar-brand,
+.nav-link {
+  font-size: 1.2rem; /* Aumentar tamaño del texto en el navbar */
+  color: #ffffff !important; /* Color blanco para los enlaces */
+}
+
+/* Contenedor de información de cada sección */
+.container-info {
+  background: rgba(255, 255, 255, 0.8); /* Fondo blanco transparente */
+  border-radius: 10px; /* Esquinas redondeadas */
+  padding: 20px;
+  border: 2px solid #003366; /* Borde más grueso y color azul oscuro */
+  margin-block-end: 20px;
+}
+
+/* Estilo para elementos de la lista */
+.list-group-item {
+  border: 2px solid #003366; /* Borde más grueso y color azul oscuro */
+  border-radius: 10px; /* Esquinas redondeadas */
+  margin-block-end: 10px; /* Espacio entre elementos de la lista */
+  background: rgba(255, 255, 255, 0.8); /* Fondo blanco transparente */
+}
+
+/* Asegurarse de que los elementos sean legibles en el gradiente */
+.text-dark {
+  color: #000000; /* Color del texto para asegurar legibilidad */
+}
