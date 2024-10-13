@@ -1,10 +1,12 @@
 {
   "name": "films-backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "Backend for films application",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "node index.js", 
+    "dev": "nodemon index.js",  
+    "build": "npm install" 
   },
   "dependencies": {
     "cors": "^2.8.5",
