@@ -6,7 +6,7 @@ const path = require('path');
 require('dotenv').config();
 
 const app = express();
-const port = process.env.PORT || 8080; // Aquí está el cambio
+const port = process.env.PORT  // Aquí está el cambio
 
 // Habilita CORS
 app.use(cors());

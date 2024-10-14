@@ -15,7 +15,7 @@ const Media = () => {
 
   const fetchPeliculas = async () => {
     try {
-      const response = await axios.get('http://localhost:8080/inventory');
+      const response = await axios.get('https://filmsback-f6c5hrgxakcfdpax.eastus-01.azurewebsites.net/inventory');
       setPeliculas(response.data);
     } catch (error) {
       console.error('Error fetching movies:', error);
@@ -49,12 +49,12 @@ const Media = () => {
     try {
       if (editing) {
         // Enviar los datos y la imagen usando PUT
-        await axios.put(`http://localhost:8080/inventory/${currentPelicula._id}`, formData, {
+        await axios.put(`https://filmsback-f6c5hrgxakcfdpax.eastus-01.azurewebsites.net/inventory/${currentPelicula._id}`, formData, {
           headers: { 'Content-Type': 'multipart/form-data' }
         });
       } else {
         // Enviar los datos y la imagen usando POST
-        await axios.post('http://localhost:8080/inventory', formData, {
+        await axios.post('https://filmsback-f6c5hrgxakcfdpax.eastus-01.azurewebsites.net/inventory', formData, {
           headers: { 'Content-Type': 'multipart/form-data' }
         });
       }
@@ -73,7 +73,7 @@ const Media = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:8080/inventory/${id}`);
+      await axios.delete(`https://filmsback-f6c5hrgxakcfdpax.eastus-01.azurewebsites.net/inventory/${id}`);
       fetchPeliculas();
     } catch (error) {
       console.error('Error deleting movie:', error);
