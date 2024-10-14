@@ -11,7 +11,7 @@ const Genero = () => {
 
   const fetchGeneros = async () => {
     try {
-      const response = await axios.get('http://localhost:8080/media'); // Asegúrate de que esta URL es correcta
+      const response = await axios.get('/media'); // Asegúrate de que esta URL es correcta
       const generosUnicos = [...new Set(response.data.map(pelicula => pelicula.genero.nombre))];
       setGeneros(generosUnicos);
     } catch (error) {

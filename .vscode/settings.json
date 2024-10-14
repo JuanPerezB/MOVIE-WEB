@@ -2,5 +2,7 @@
     "appService.zipIgnorePattern": [
         "node_modules{,/**}",
         ".vscode{,/**}"
-    ]
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/08db5082-140c-4030-90f8-eba70bcd2d4f/resourceGroups/jc/providers/Microsoft.Web/sites/filmsfront",
+    "appService.deploySubpath": "films-frontend"
 }
